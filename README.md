@@ -11,6 +11,20 @@
 npm install -S @jswork/next-try-require
 ```
 
+## configuration
+> project_root/config.js
+
+```js
+{
+  test: /\.(js|mjs|jsx|ts|tsx)$/,
+  include: [
+    paths.appSrc,
+    path.join(__dirname, '../node_modules/@jswork/next-try-require/dist')
+  ],
+  loader: require.resolve('babel-loader')
+}
+```
+
 ## usage
 ```conf
 └── medias
