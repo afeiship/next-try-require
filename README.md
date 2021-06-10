@@ -13,7 +13,6 @@ npm install -S @jswork/next-try-require
 
 ## usage
 ```conf
-```
 └── medias
     ├── animation.tsx
     ├── audio.tsx
@@ -21,6 +20,8 @@ npm install -S @jswork/next-try-require
     ├── image.tsx
     ├── unknown.tsx
     └── video.tsx
+```
+
 ```js
 import '@jswork/next-try-require';
 
