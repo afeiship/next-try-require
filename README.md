@@ -25,9 +25,15 @@ npm install -S @jswork/next-try-require
 ```js
 import '@jswork/next-try-require';
 
+// .${context}${path}
+// .${context}${defaults}
+// @${context}${path}
+// @${context}${defaults}
+
 const MediaComponent = nx.tryRequire(
-  `medias/${mediaType}`, 
-  'medias/unknown'
+  mediaType,
+  'unknown',
+  { context: '/medias/'}
 );
 
 <MediaComponent model={model}/>
