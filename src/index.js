@@ -5,13 +5,13 @@
 
   nx.tryRequire = function (inPath, inDefaults, inOptions) {
     var options = nx.mix(null, defaults, inOptions);
+    var path = options.context + inPath;
+    var defaults = options.context + inDefaults;
     var res;
     try {
-      res = options.relative ? require('.' + context + inPath) : require('@' + context + inPath);
+      res = options.relative ? require('.' + path) : require('@' + path);
     } catch (e) {
-      res = options.relative
-        ? require('.' + context + inDefaults)
-        : require('@' + context + inDefaults);
+      res = options.relative ? require('.' + defaults) : require('@' + defaults);
     }
     return res;
   };
