@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-try-require",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if a dependency exists with webpack",
   "homepage": "https://github.com/afeiship/next-try-require",
   "author": {
